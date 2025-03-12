@@ -265,63 +265,113 @@ header .container {
 
 /* Hero Section */
 .hero {
-    padding-top: calc(var(--header-height) + 50px);
-    padding-bottom: 100px;
-    background-color: var(--bg-secondary);
+    padding-top: calc(var(--header-height) + 80px);
+    padding-bottom: 120px;
+    background-color: var(--bg-color);
     position: relative;
     overflow: hidden;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
 }
 
 .hero-content {
     display: flex;
     align-items: center;
-    gap: 50px;
+    justify-content: space-between;
+    position: relative;
 }
 
 .hero-text {
-    flex: 1;
+    max-width: 600px;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
-    line-height: 1.2;
-    margin-bottom: 20px;
+    font-size: 3.8rem;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.hero-lastname {
+    margin-bottom: 20px !important;
 }
 
 .hero-text h2 {
     font-size: 2rem;
-    color: var(--primary-color);
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .hero-text p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--text-secondary);
-    margin-bottom: 30px;
-    max-width: 500px;
+    margin-bottom: 35px;
+    max-width: 550px;
 }
 
 .hero-cta {
     display: flex;
-    gap: 15px;
+    gap: 25px;
+    align-items: center;
 }
 
-.hero-image {
-    flex: 1;
+.text-btn {
+    background: transparent;
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 12px 0;
     position: relative;
-    min-height: 400px;
 }
 
-.hero-bg {
+.text-btn:after {
+    content: '';
     position: absolute;
-    top: 0;
-    right: 0;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.text-btn:hover:after {
     width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    border-radius: 20px;
-    opacity: 0.1;
-    transform: rotate(-5deg);
+}
+
+.text-btn:hover {
+    color: var(--primary-color);
+}
+
+.hero-circles {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+    background: var(--primary-color);
+}
+
+.circle-1 {
+    width: 300px;
+    height: 300px;
+    right: 100px;
+    top: -100px;
+}
+
+.circle-2 {
+    width: 200px;
+    height: 200px;
+    right: 0;
+    top: 50px;
 }
 
 /* About Section */
