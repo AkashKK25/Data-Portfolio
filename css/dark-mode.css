@@ -20,6 +20,18 @@
     opacity: 0.15;
 }
 
+.dark-mode .experience-content h3 {
+    color: var(--text-color);
+}
+
+.dark-mode .experience-timeline:before {
+    background-color: var(--primary-color);
+}
+
+.dark-mode .experience-date {
+    color: var(--primary-color);
+}
+
 .dark-mode header {
     background-color: var(--bg-color);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
