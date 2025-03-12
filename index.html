@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Kumar Kondaparthi | Data Scientist & Analyst</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body class="dark-mode">
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">Akash<span class="highlight">KK</span></span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </label>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="highlight">Akash Kumar</span></h1>
+                    <h2>Data Scientist & Analytics Engineer</h2>
+                    <p>Transforming raw data into meaningful insights and powerful ML solutions</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn primary-btn">View Projects</a>
+                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-bg"></div>
+                    <img src="img/photo.png" alt="Akash Kumar Kondaparthi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- About image would go here -->
+                </div>
+                <div class="about-text">
+                    <h3>Data Science & Analytics Professional</h3>
+                    <p>I'm a data analytics and machine learning professional with a Master's in Electrical and Computer Engineering from the University of Florida. My expertise lies in transforming complex datasets into actionable business insights, building predictive models, and developing data-driven solutions.</p>
+                    <p>With experience at IFAS and Wipro, I've worked on diverse projects ranging from ETL pipeline development to creating interactive dashboards that drive decision-making processes. I'm passionate about solving real-world problems through data science and machine learning.</p>
+                    <div class="about-details">
+                        <div class="about-detail">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>MS in Electrical and Computer Engineering</p>
+                                <p>University of Florida (GPA: 3.7/4.0)</p>
+                            </div>
+                        </div>
+                        <div class="about-detail">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h4>Experience</h4>
+                                <p>Machine Learning Engineer at IFAS</p>
+                                <p>Software Engineer at Wipro</p>
+                            </div>
+                        </div>
+                        <div class="about-detail">
+                            <i class="fas fa-file-alt"></i>
+                            <div>
+                                <h4>Publication</h4>
+                                <p>Research on AI for Leaf Wetness Detection</p>
+                                <p>Published in Sensors 2024</p>
+                            </div>
+                        </div>
+                        <div class="about-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Gainesville, Florida, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="#" class="btn primary-btn">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-radar">
+                    <canvas id="skillsRadar"></canvas>
+                </div>
+                <div class="skills-categories">
+                    <div class="skills-category">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">Python</div>
+                            <div class="skill-item">SQL</div>
+                            <div class="skill-item">JavaScript</div>
+                            <div class="skill-item">HTML/CSS</div>
+                            <div class="skill-item">R</div>
+                            <div class="skill-item">C</div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3><i class="fas fa-database"></i> Databases</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">MySQL</div>
+                            <div class="skill-item">PostgreSQL</div>
+                            <div class="skill-item">SQL Server</div>
+                            <div class="skill-item">DB2</div>
+                            <div class="skill-item">MongoDB</div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">Scikit-learn</div>
+                            <div class="skill-item">TensorFlow</div>
+                            <div class="skill-item">PyTorch</div>
+                            <div class="skill-item">Keras</div>
+                            <div class="skill-item">NumPy</div>
+                            <div class="skill-item">Pandas</div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3><i class="fas fa-chart-bar"></i> Data Visualization</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">Tableau</div>
+                            <div class="skill-item">Power BI</div>
+                            <div class="skill-item">Matplotlib</div>
+                            <div class="skill-item">Seaborn</div>
+                            <div class="skill-item">D3.js</div>
+                            <div class="skill-item">Excel Charts</div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3><i class="fas fa-cloud"></i> Cloud & Big Data</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">AWS</div>
+                            <div class="skill-item">EC2</div>
+                            <div class="skill-item">S3</div>
+                            <div class="skill-item">Apache Spark</div>
+                            <div class="skill-item">PySpark</div>
+                            <div class="skill-item">Docker</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-container left">
+                    <div class="timeline-date">
+                        <span>Feb 2023</span>
+                        <span class="divider"></span>
+                        <span>Present</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Machine Learning Engineer (Data Analytics)</h3>
+                        <h4>IFAS | Gainesville, FL</h4>
+                        <ul>
+                            <li>Conducted exploratory data analysis (EDA) on 50+ GB of imaging data, identifying key trends and anomalies, improving data quality by 32%.</li>
+                            <li>Designed and implemented ETL pipelines using Python, processing data from 12 different sources for streamlined analysis.</li>
+                            <li>Created interactive dashboards using Power BI and Excel, reducing report generation time by 65% and enabling real-time decision-making.</li>
+                            <li>Developed automated reporting processes using Python scripts, saving team members 10+ hours of work per week.</li>
+                            <li>Managed the integration of IoT devices to automate data collection, enabling seamless reporting and visualization for stakeholders.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-container right">
+                    <div class="timeline-date">
+                        <span>Aug 2021</span>
+                        <span class="divider"></span>
+                        <span>July 2022</span>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <h4>Wipro | Hyderabad, India</h4>
+                        <ul>
+                            <li>Designed and optimized ETL pipelines for 15+ data sources, ensuring 99.8% data accuracy for analytical reporting.</li>
+                            <li>Built and maintained connections to diverse systems including SQL Server, Amazon Redshift, and SharePoint Online, improving data accessibility by 40%.</li>
+                            <li>Supported migration of 5TB of legacy data to AWS Redshift, enhancing query performance by 75% for real-time analytics.</li>
+                            <li>Created and maintained Power BI dashboards used by 200+ business stakeholders, translating complex datasets into visual insights.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+                <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                <button class="filter-btn" data-filter="visualization">Visualization</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="data-analysis visualization">
+                    <div class="project-image">
+                        <img src="img/project1.jpg" alt="Movie Profitability Analysis">
+                        <div class="project-links">
+                            <a href="https://github.com/AkashKK25/Movie-Profitability-Analysis.git" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="projects/project1.html"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Movie Profitability Analysis</h3>
+                        <p>Analyzed 3,000+ movies (1980-2022) to identify profitability factors, created interactive Power BI dashboard for visualizing trends by genre, studio, and budget.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Power BI</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" data-category="machine-learning">
+                    <div class="project-image">
+                        <img src="img/project2.jpg" alt="Credit Card Default Prediction">
+                        <div class="project-links">
+                            <a href="https://github.com/AkashKK25/Credit-Card-Default-Prediction-and-Analysis.git" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="projects/project2.html"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Credit Card Default Prediction</h3>
+                        <p>Built a machine learning pipeline for predicting credit card defaults with 77% ROC-AUC score, created visualization dashboard highlighting customer risk segments.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>EDA</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" data-category="machine-learning data-analysis">
+                    <div class="project-image">
+                        <img src="img/project3.jpg" alt="Hospital Readmission Prediction">
+                        <div class="project-links">
+                            <a href="https://github.com/AkashKK25/Hospital-Readmission-Prediction-Project" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="projects/project3.html"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Hospital Readmission Prediction</h3>
+                        <p>Developed ML models to predict 30-day hospital readmissions for diabetic patients, demonstrated potential cost savings of $450,000 per 1,000 patients.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Healthcare</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card" data-category="data-analysis visualization">
+                    <div class="project-image">
+                        <img src="img/project4.jpg" alt="Supermarket Sales Analyzer">
+                        <div class="project-links">
+                            <a href="https://github.com/AkashKK25/Supermarket-Sales-Analyzer" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="projects/project4.html"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Supermarket Sales Analyzer</h3>
+                        <p>Analyzed 50,000+ transactions to identify sales patterns and product correlations, created Tableau dashboards with business recommendations to increase sales by 23%.</p>
+                        <div class="project-tags">
+                            <span>Tableau</span>
+                            <span>SQL</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card" data-category="data-analysis visualization">
+                    <div class="project-image">
+                        <img src="img/project5.jpg" alt="E-commerce Customer Behavior Analysis">
+                        <div class="project-links">
+                            <a href="https://github.com/AkashKK25/Ecommerce-Customer-Analysis" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="projects/project5.html"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Customer Behavior Analysis</h3>
+                        <p>Analyzed 100,000+ transactions across 32,000+ products, identified 4 high-value customer segments accounting for 70% of revenue.</p>
+                        <div class="project-tags">
+                            <span>Power BI</span>
+                            <span>Python</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- New Project 6 -->
+                <div class="project-card" data-category="machine-learning">
+                    <div class="project-image">
+                        <img src="img/project6.jpg" alt="Image Classification for Plant Disease Detection">
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="projects/project6.html"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Plant Disease Detection with CNNs</h3>
+                        <p>Developed a deep learning model using convolutional neural networks to detect and classify plant diseases from leaf images with 94% accuracy.</p>
+                        <div class="project-tags">
+                            <span>TensorFlow</span>
+                            <span>Computer Vision</span>
+                            <span>CNN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>I'm Available For</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Job Opportunities</h3>
+                    <p>Looking for full-time positions in data science, machine learning, and analytics roles.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Freelance Projects</h3>
+                    <p>Available for contract work or freelance data projects with flexible scheduling.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Collaborations</h3>
+                    <p>Interested in collaborative research projects, particularly in ML and computer vision.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Mentorship</h3>
+                    <p>Open to mentoring aspiring data scientists and providing educational guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Feel free to reach out to me using any of the contact methods below or by filling out the contact form.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p><a href="mailto:akashkondaparthi@gmail.com">akashkondaparthi@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+13527099437">+1 (352) 709-9437</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Gainesville, Florida, USA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/akashkk" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/akashkk25" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn submit-btn">
+                            Send Message
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Akash<span class="highlight">KK</span></span>
+                </div>
+                <p class="footer-text">Transforming data into insights and ML solutions</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/akashkk" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/akashkk25" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Akash Kumar Kondaparthi. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/radar-chart.js"></script>
+    <script src="js/dark-mode.js"></script>
+</body>
+</html>

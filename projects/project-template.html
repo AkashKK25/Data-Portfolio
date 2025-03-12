@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name | Akash Kumar Kondaparthi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-hero {
+            padding-top: calc(var(--header-height) + 50px);
+            padding-bottom: 50px;
+            background-color: var(--bg-secondary);
+        }
+        
+        .project-banner {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+        }
+        
+        .project-hero-content {
+            text-align: center;
+        }
+        
+        .project-hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .project-hero-content .project-tags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .project-hero-content .project-tags span {
+            padding: 8px 16px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .project-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .project-links a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            background-color: var(--card-bg);
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+        
+        .project-links a:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .project-content {
+            padding: 50px 0;
+        }
+        
+        .project-section {
+            margin-bottom: 50px;
+        }
+        
+        .project-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .project-section p {
+            margin-bottom: 15px;
+            color: var(--text-secondary);
+        }
+        
+        .project-section ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .project-section ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .project-section ul li:before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            left: 0;
+            top: 8px;
+        }
+        
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .back-to-projects {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <span class="logo-text">Akash<span class="highlight">KK</span></span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#skills">Skills</a></li>
+                    <li><a href="../index.html#experience">Experience</a></li>
+                    <li><a href="../index.html#projects" class="active">Projects</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </label>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <img src="../img/project-banner.jpg" alt="Project Banner" class="project-banner">
+            <div class="project-hero-content">
+                <h1>Project Name</h1>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>Data Analysis</span>
+                </div>
+                <p>A brief description of the project that captures its essence and main objectives.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <!-- Overview Section -->
+            <div class="project-section">
+                <h2>Project Overview</h2>
+                <p>Detailed description of the project, its purpose, and the problem it aims to solve. Explain the significance of the project and what motivated you to work on it.</p>
+                <p>This section should provide enough context for readers to understand the value and impact of your work.</p>
+            </div>
+
+            <!-- Technologies Section -->
+            <div class="project-section">
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li><strong>Programming Languages:</strong> Python, SQL</li>
+                    <li><strong>Libraries & Frameworks:</strong> Pandas, NumPy, Scikit-learn, Matplotlib</li>
+                    <li><strong>Tools:</strong> Jupyter Notebook, Git, GitHub</li>
+                    <li><strong>Databases:</strong> PostgreSQL</li>
+                    <li><strong>Visualization:</strong> Tableau, Power BI</li>
+                </ul>
+            </div>
+
+            <!-- Methodology Section -->
+            <div class="project-section">
+                <h2>Methodology</h2>
+                <p>Explain the approach and steps taken to complete the project. This could include data collection methods, preprocessing techniques, model development, evaluation metrics, and more.</p>
+                <ol>
+                    <li>Data Collection and Exploration</li>
+                    <li>Data Cleaning and Preprocessing</li>
+                    <li>Feature Engineering</li>
+                    <li>Model Development and Training</li>
+                    <li>Evaluation and Optimization</li>
+                    <li>Visualization and Reporting</li>
+                </ol>
+            </div>
+
+            <!-- Results Section -->
+            <div class="project-section">
+                <h2>Results and Insights</h2>
+                <p>Present the key findings and results of your project. Include relevant metrics, visualizations, and insights that demonstrate the success of your approach.</p>
+                <ul>
+                    <li>Key Finding 1: Description and implications</li>
+                    <li>Key Finding 2: Description and implications</li>
+                    <li>Key Finding 3: Description and implications</li>
+                </ul>
+                <p>Add specific numbers, percentages, or other quantitative data that highlights the impact of your project.</p>
+            </div>
+
+            <!-- Challenges Section -->
+            <div class="project-section">
+                <h2>Challenges and Solutions</h2>
+                <p>Discuss the challenges faced during the project and how you overcame them. This demonstrates your problem-solving skills and persistence.</p>
+                <ul>
+                    <li><strong>Challenge 1:</strong> Description of the challenge and the solution implemented</li>
+                    <li><strong>Challenge 2:</strong> Description of the challenge and the solution implemented</li>
+                    <li><strong>Challenge 3:</strong> Description of the challenge and the solution implemented</li>
+                </ul>
+            </div>
+
+            <!-- Project Gallery -->
+            <div class="project-section">
+                <h2>Project Gallery</h2>
+                <div class="project-gallery">
+                    <div class="gallery-item">
+                        <img src="../img/gallery1.jpg" alt="Project Screenshot 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../img/gallery2.jpg" alt="Project Screenshot 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../img/gallery3.jpg" alt="Project Screenshot 3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conclusion Section -->
+            <div class="project-section">
+                <h2>Conclusion</h2>
+                <p>Summarize the project, its outcomes, and its significance. Discuss what you learned from the project and any future improvements or extensions you might consider.</p>
+            </div>
+
+            <!-- Back to Projects Link -->
+            <div class="back-to-projects">
+                <a href="../index.html#projects" class="btn primary-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Akash<span class="highlight">KK</span></span>
+                </div>
+                <p class="footer-text">Transforming data into insights and ML solutions</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/akashkk" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/akashkk25" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Akash Kumar Kondaparthi. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/dark-mode.js"></script>
+</body>
+</html>
