@@ -92,15 +92,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form validation
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
+        // We're using FormSubmit.co for the form submission, so we don't need to prevent default
+        // Just add some additional client-side validation if needed
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
             const subject = document.getElementById('subject').value.trim();
             const message = document.getElementById('message').value.trim();
             
             if (name === '' || email === '' || subject === '' || message === '') {
+                e.preventDefault();
                 alert('Please fill in all fields');
                 return;
             }
@@ -108,14 +109,12 @@ document.addEventListener('DOMContentLoaded', function() {
             // Email validation
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailRegex.test(email)) {
+                e.preventDefault();
                 alert('Please enter a valid email address');
                 return;
             }
             
-            // Form submission logic would go here
-            // For now, just show an alert
-            alert('Thank you for your message! I will get back to you soon.');
-            contactForm.reset();
+            // If validation passes, the form will submit normally to FormSubmit.co
         });
     }
     
