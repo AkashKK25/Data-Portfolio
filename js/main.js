@@ -92,8 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form validation
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
-        // We're using FormSubmit.co for the form submission, so we don't need to prevent default
-        // Just add some additional client-side validation if needed
+        // Using FormSubmit.co for the form submission
         contactForm.addEventListener('submit', function(e) {
             const name = document.getElementById('name').value.trim();
             const email = document.getElementById('email').value.trim();
@@ -130,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (prevScrollPos > currentScrollPos) {
                 header.style.transform = 'translateY(0)';
-            } else {
+            } else if (currentScrollPos > prevScrollPos + 75) {
                 header.style.transform = 'translateY(-100%)';
             }
         } else {

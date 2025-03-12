@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         datasets: [{
             label: 'Skill Level',
-            data: [95, 88, 85, 90, 80, 85, 78, 82],
+            data: [95, 98, 93, 85, 90, 95, 78, 86],
             fill: true,
             backgroundColor: backgroundColor,
             borderColor: borderColor,
