@@ -79,3 +79,7 @@
 .dark-mode .service-icon {
     background-color: rgba(59, 130, 246, 0.2);
 }
+
+.dark-mode .filter-btn {
+    color: #f8fafc;
+}
