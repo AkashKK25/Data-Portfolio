@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Chain Optimization for Small Businesses | Akash Kumar Kondaparthi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-hero {
+            padding-top: calc(var(--header-height) + 50px);
+            padding-bottom: 50px;
+            background-color: var(--bg-secondary);
+        }
+        
+        .project-banner {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+        }
+        
+        .project-hero-content {
+            text-align: center;
+        }
+        
+        .project-hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .project-hero-content .project-tags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .project-hero-content .project-tags span {
+            padding: 8px 16px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .project-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .project-links a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            background-color: var(--card-bg);
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+        
+        .project-links a:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .project-content {
+            padding: 50px 0;
+        }
+        
+        .project-section {
+            margin-bottom: 50px;
+        }
+        
+        .project-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .project-section p {
+            margin-bottom: 15px;
+            color: var(--text-secondary);
+        }
+        
+        .project-section ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .project-section ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .project-section ul li:before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            left: 0;
+            top: 8px;
+        }
+        
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .back-to-projects {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <span class="logo-text">Akash<span class="highlight">KK</span></span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#skills">Skills</a></li>
+                    <li><a href="../index.html#experience">Experience</a></li>
+                    <li><a href="../index.html#projects" class="active">Projects</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </label>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <img src="../assets/img/supply_chain_dashboard.gif" alt="Project Banner" class="project-banner">
+            <div class="project-hero-content">
+                <h1>Supply Chain Optimization for Small Businesses</h1>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Time Series</span>
+                    <span>Data Science</span>
+                    <span>pandas</span>
+                    <span>scikit-learn</span>
+                    <span>statsmodels</span>
+                    <span>Dash</span>
+                    <span>plotly</span>
+                    <span>Git</span> 
+                </div>
+                <p>An end-to-end data science solution that helps small businesses optimize their inventory management through demand forecasting, inventory modeling, and interactive visualizations—potentially reducing costs by up to 30% while improving service levels.</p>
+                <div class="project-links">
+                    <a href="https://github.com/AkashKK25/SupplyChainOptimization.git" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                    <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Project page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <!-- Overview Section -->
+            <div class="project-section">
+                <h2>Project Overview</h2>
+                <p>This project presents a comprehensive supply chain optimization system designed to help small businesses make data-driven inventory decisions. While large enterprises often have sophisticated inventory management systems, small businesses frequently rely on intuition and basic heuristics, leading to inefficiencies and unnecessary costs. This solution bridges that gap by providing advanced analytics capabilities without requiring specialized knowledge.</p>
+            </div>
+
+            <!-- Technologies Section -->
+            <div class="project-section">
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li><strong>Programming Languages:</strong> Python</li>
+                    <li><strong>Libraries & Frameworks:</strong> Pandas, NumPy, Scikit-learn, Matplotlib, statsmodels</li>
+                    <li><strong>Tools:</strong> Jupyter Notebook, Git, GitHub</li>
+                    <li><strong>Visualization:</strong> Dash, plotly</li>
+                </ul>
+            </div>
+
+            <!-- Methodology Section -->
+            <div class="project-section">
+                <h2>Problem Statement</h2>
+                <p>Small businesses face three critical inventory challenges:</p>
+                <ol>
+                    <li>Excess inventory tying up valuable working capital</li>
+                    <li>Stockouts resulting in lost sales and customer dissatisfaction</li>
+                    <li>Inefficient ordering patterns increasing operational costs</li>
+                </ol>
+                <p>These challenges stem from difficulties in accurately forecasting demand and determining optimal inventory policies. This project tackles these issues through a data-driven approach that balances holding costs, stockout costs, and ordering costs.</p>
+            </div>
+
+            <div class="project-section">
+                <h2>Technical Implementation</h2>
+                <p>The system consists of four integrated components:</p>
+                <ol>
+                    <li>Data Processing Pipeline</li>
+                    <ul>
+                        <li>Implemented ETL processes for sales and inventory data</li>
+                        <li>Created synthetic datasets that mimic real-world patterns including seasonality, trends, and random fluctuations</li>
+                        <li>Built robust data validation and cleaning mechanisms</li>
+                    </ul>
+                    <li>Time Series Forecasting Engine</li>
+                    <ul>
+                        <li>Developed and compared four forecasting models:</li>
+                        <ul>
+                            <li>Moving Average (baseline)</li>
+                            <li>Holt-Winters Exponential Smoothing</li>
+                            <li>SARIMA (Seasonal ARIMA)</li>
+                            <li>Random Forest with feature engineering</li>
+                        </ul>
+                        <li>Implemented cross-validation strategies specific to time series data</li>
+                        <li>Generated 30-day demand forecasts with confidence intervals</li>
+                    </ul>
+                    <li>Inventory Optimization Models</li>
+                    <ul>
+                        <li>Implemented classical inventory models with modern adaptations:<br>Economic Order Quantity (EOQ) for optimal order sizing<br>Reorder Point calculation based on lead time and demand variability<br>Safety stock determination for various service levels<br>Cost trade-off analysis between service levels</li>
+                        <li>Created a reorder scheduling system with specific date recommendations</li>
+                    </ul>
+                    <li>Interactive Dashboard</li>
+                    <ul>
+                        <li>Built a multi-tab Dash application showcasing:</li>
+                        <ul>
+                            <li>Business overview with key performance indicators</li>
+                            <li>Demand forecasting with seasonal patterns</li>
+                            <li>Inventory optimization parameters and recommendations</li>
+                            <li>Reorder planning with timeline visualization</li>
+                        </ul>
+                        <li>Implemented responsive visualizations using Plotly</li>
+                        <li>Designed for intuitive use by non-technical business users</li>
+                    </ul>
+                </ol>
+            </div>
+
+            <!-- Results Section -->
+            <div class="project-section">
+                <h2>Results and Insights</h2>
+                <p>The system provides actionable business insights including:</p>
+                <ul>
+                    <li>Potential cost savings of 15-30% through optimized inventory levels</li>
+                    <li>Reduction in stockout events by over 50% at the recommended service levels</li>
+                    <li>Improved cash flow through more efficient inventory turnover</li>
+                    <li>Clear reorder recommendations with specific quantities and dates</li>
+                </ul>
+            </div>
+
+            <!-- Challenges Section -->
+            <div class="project-section">
+                <h2>Challenges</h2>
+                <p>Key challenges overcome during development:</p>
+                <ul>
+                    <li>Balancing model complexity with interpretability for business users</li>
+                    <li>Implementing efficient feature engineering for time series data</li>
+                    <li>Optimizing dashboard performance for large datasets</li>
+                    <li>Creating a system flexible enough to adapt to different business contexts</li>
+                </ul>
+            </div>
+
+            <!-- Project Gallery -->
+            <div class="project-section">
+                <h2>Project Gallery</h2>
+                <div class="project-gallery">
+                    <div class="gallery-item">
+                        <img src="../assets/img/supply_chain_dashboard_overview(1001).png" alt="Project Screenshot 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/img/supply_chain_dashboard_overview(1002).png" alt="Project Screenshot 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/img/supply_chain_dashboard_overview(1003).png" alt="Project Screenshot 3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conclusion Section -->
+            <div class="project-section">
+                <h2>Conclusion</h2>
+                <p>This project demonstrates proficiency in the complete data science lifecycle—from data exploration and model development to creating user-friendly visualizations and deploying production-ready applications.</p>
+            </div>
+
+            <!-- Back to Projects Link -->
+            <div class="back-to-projects">
+                <a href="../projects/projects.html" class="btn primary-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Akash<span class="highlight">KK</span></span>
+                </div>
+                <p class="footer-text">Transforming data into insights and ML solutions</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/akashkk" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/akashkk25" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-reddit"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Akash Kumar Kondaparthi</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/dark-mode.js"></script>
+</body>
+</html>
