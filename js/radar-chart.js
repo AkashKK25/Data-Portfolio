@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'Data Analysis',
             'Machine Learning',
             'Data Visualization',
-            'Database',
+            'Databases',
             'Programming',
             'Statistics',
-            'Cloud Computing',
+            'Cloud',
             'Big Data'
         ],
         datasets: [{

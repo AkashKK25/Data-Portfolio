@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Sentiment Analysis Project for Product Feedback | Akash Kumar Kondaparthi</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-mode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-hero {
+            padding-top: calc(var(--header-height) + 50px);
+            padding-bottom: 50px;
+            background-color: var(--bg-secondary);
+        }
+        
+        .project-banner {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+        }
+        
+        .project-hero-content {
+            text-align: center;
+        }
+        
+        .project-hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .project-hero-content .project-tags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .project-hero-content .project-tags span {
+            padding: 8px 16px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .project-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .project-links a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            background-color: var(--card-bg);
+            border-radius: 50px;
+            font-weight: 500;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+        }
+        
+        .project-links a:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .project-content {
+            padding: 50px 0;
+        }
+        
+        .project-section {
+            margin-bottom: 50px;
+        }
+        
+        .project-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .project-section p {
+            margin-bottom: 15px;
+            color: var(--text-secondary);
+        }
+        
+        .project-section ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .project-section ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .project-section ul li:before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            left: 0;
+            top: 8px;
+        }
+        
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .back-to-projects {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <span class="logo-text">Akash<span class="highlight">KK</span></span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="../index.html#about">About</a></li>
+                    <li><a href="../index.html#skills">Skills</a></li>
+                    <li><a href="../index.html#experience">Experience</a></li>
+                    <li><a href="../index.html#projects" class="active">Projects</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="../index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <input type="checkbox" id="dark-mode-toggle">
+                <label for="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </label>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Hero Section -->
+    <section class="project-hero">
+        <div class="container">
+            <img src="../assets/img/sentiment-analysis.png" alt="Project Banner" class="project-banner">
+            <div class="project-hero-content">
+                <h1>Smartphone Sentiment Analysis: Mining Consumer Insights from Social Media</h1>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>NLTK</span>
+                    <span>spaCy</span>
+                    <span>Pandas</span>
+                    <span>scikit-learn</span>
+                    <span>Matplotlib</span>
+                    <span>Streamlit</span>
+                    <span>plotly</span>
+                    <span>Twitter API</span> 
+                </div>
+                <p>Smartphone Sentiment Analyzer: An end-to-end data science project that collects Twitter data to analyze and visualize consumer sentiment toward competing smartphone brands with interactive dashboards and NLP-powered insights.</p>
+                <div class="project-links">
+                    <a href="https://github.com/AkashKK25/social-media-sentiment-analysis.git" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                    <a href="https://social-media-sentiment-analysis-az2kxeazreeqwqjizqixpl.streamlit.app/" target="_blank"><i class="fas fa-external-link-alt"></i> Project page</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <!-- Overview Section -->
+            <div class="project-section">
+                <h2>Project Overview</h2>
+                <p>This project demonstrates my ability to develop a complete data science solution from data collection to deployment. I created a system that automatically collects tweets about iPhone and Samsung Galaxy smartphones, analyzes the sentiment and topics discussed, and presents insights through an interactive dashboard.</p>
+            </div>
+
+            <!-- Technologies Section -->
+            <div class="project-section">
+                <h2>Technologies Used</h2>
+                <ul>
+                    <li><strong>Programming Languages:</strong> Python</li>
+                    <li><strong>Data Collection:</strong> Twitter API, Tweepy</li>
+                    <li><strong>Data Processing:</strong> Pandas, NumPy</li>
+                    <li><strong>Text Processing:</strong> NLTK, spaCy, Regex</li>
+                    <li><strong>Sentiment Analysis:</strong> VADER, TextBlob, scikit-learn</li>
+                    <li><strong>Topic Modeling:</strong> Gensim, pyLDAvis</li>
+                    <li><strong>Data Visualization:</strong> Matplotlib, Seaborn, Plotly</li>
+                    <li><strong>Web Application:</strong> Streamlit</li>
+                    <li><strong>Version Control:</strong> Git, GitHub</li>
+                    <li><strong>Deployment:</strong> Streamlit Sharing</li>
+                </ul>
+            </div>
+
+            <!-- Methodology Section -->
+            <div class="project-section">
+                <h2>Problem Statement</h2>
+                <p>Companies need to understand public sentiment about their products and competitors, but manually analyzing thousands of social media posts is impractical. I wanted to create an automated solution that could:</p>
+                <ol>
+                    <li>Track consumer sentiment toward different smartphone brands</li>
+                    <li>Identify common topics, concerns, and praised features</li>
+                    <li>Visualize trends over time</li>
+                    <li>Extract actionable insights for product development and marketing teams</li>
+                </ol>
+            </div>
+
+            <div class="project-section">
+                <h2>Methodology</h2>
+                <ol>
+                    <li>Data Collection</li>
+                    <ul>
+                        <li>Implemented a Twitter API integration to collect tweets mentioning iPhone and Samsung Galaxy</li>
+                        <li>Created an accumulation system that builds datasets incrementally to overcome API rate limits</li>
+                        <li>Built a sample data generator for development and testing</li>
+                    </ul>
+                    <li>Data Preprocessing</li>
+                    <ul>
+                        <li>Developed a comprehensive text cleaning pipeline for social media text</li>
+                        <li>Implemented tokenization, stopword removal, and lemmatization</li>
+                        <li>Extracted key entities and features mentioned in tweets</li>
+                    </ul>
+                    <li>Sentiment Analysis</li>
+                    <ul>
+                        <li>Applied rule-based approaches (VADER and TextBlob) for initial sentiment scoring</li>
+                        <li>Trained custom machine learning models (Logistic Regression and SVM) for sentiment classification</li>
+                        <li>Compared and evaluated different approaches to select the most accurate model</li>
+                    </ul>
+                    <li>Topic Modeling</li>
+                    <ul>
+                        <li>Used Latent Dirichlet Allocation (LDA) to discover hidden topics in the text</li>
+                        <li>Extracted frequently occurring n-grams and phrases</li>
+                        <li>Mapped sentiment to specific product features and topics</li>
+                    </ul>
+                    <li>Interactive Dashboard</li>
+                    <ul>
+                        <li>Built a Streamlit web application with responsive visualizations</li>
+                        <li>Created filters for time periods, product categories, and sentiment</li>
+                        <li>Implemented real-time data updates and interactive charts</li>
+                        <li>Deployed the dashboard for public access</li>
+                    </ul>
+                </ol>
+            </div>
+
+            <div class="project-section">
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Real-time sentiment analysis of tweets about competing smartphone brands</li>
+                    <li>Interactive visualizations showing sentiment trends over time</li>
+                    <li>Feature extraction identifying commonly discussed product attributes</li>
+                    <li>Topic modeling revealing hidden patterns in consumer feedback</li>
+                    <li>Comparative analysis between iPhone and Samsung Galaxy</li>
+                    <li>Engagement metrics analysis by sentiment category</li>
+                    <li>User-friendly dashboard for exploring insights</li>
+                </ul>
+            </div>
+
+            <!-- Results Section -->
+            <div class="project-section">
+                <h2>Results and Impact</h2>
+                <p>The project successfully created a functioning sentiment analysis dashboard that provides actionable insights about smartphone consumer preferences. Key findings include:</p>
+                <ul>
+                    <li>Identification of the most positively and negatively discussed features for each brand</li>
+                    <li>Detection of emerging trends and consumer concerns</li>
+                    <li>Analysis of how product updates affect public sentiment</li>
+                    <li>Visualization of competitive positioning based on consumer perception</li>
+                </ul>
+            </div>
+
+            <!-- Challenges Section -->
+            <div class="project-section">
+                <h2>Challenges</h2>
+                <ul>
+                    <li><strong>Twitter API Rate Limits:</strong> Implemented an incremental data collection strategy that accumulates tweets over multiple API calls</li>
+                    <li><strong>Text Preprocessing</strong>Created a robust pipeline to handle social media text including emojis, hashtags, and slang</li>
+                    <li><strong>Small Dataset Handling:</strong>Adapted algorithms to work effectively with limited initial data</li>
+                    <li><strong>Deployment Constraints:</strong>Optimized the application for lower-memory environments</li>
+                </ul>
+            </div>
+
+            <!-- Project Gallery -->
+            <div class="project-section">
+                <h2>Project Gallery</h2>
+                <div class="project-gallery">
+                    <div class="gallery-item">
+                        <img src="../assets/img/sentiment-analysis.png" alt="Project Screenshot 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/img/sentiment-analysis(1005).png" alt="Project Screenshot 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="../assets/img/sentiment-analysis(1006).png" alt="Project Screenshot 3">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conclusion Section -->
+            <div class="project-section">
+                <h2>Conclusion</h2>
+                <p>This project demonstrates the ability to work with unstructured text data, apply NLP techniques, and create end-to-end data science solutions that deliver business value through actionable insights.</p>
+            </div>
+
+            <!-- Back to Projects Link -->
+            <div class="back-to-projects">
+                <a href="../projects/projects.html" class="btn primary-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Akash<span class="highlight">KK</span></span>
+                </div>
+                <p class="footer-text">Transforming data into insights and ML solutions</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/akashkk" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/akashkk25" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-reddit"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-medium-m"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Akash Kumar Kondaparthi</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script src="../js/dark-mode.js"></script>
+</body>
+</html>
